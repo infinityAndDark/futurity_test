@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    tools:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageIcon"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="2dp"
+                tools:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textIcon"
+                style="@style/TextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                tools:text="This is title" />
+        </LinearLayout>
+        <com.example.futurityfood.view.bottombar.MaterialBadgeTextView
+            android:id="@+id/textBadge"
+            style="@style/TextSecondary"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/layoutContent"
+            android:layout_alignTop="@id/layoutContent"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="9dp"
+            app:mbtv_type="shadow_alpha" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_dialog_category">
+    <LinearLayout
+        style="@style/Header"
+        android:orientation="horizontal">
+
+        <ImageView style="@style/HeaderButton" />
+
+        <LinearLayout
+            android:id="@+id/viewCategory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textCategory"
+                style="@style/TextHeader"
+                android:textStyle="normal"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header_category"
+                android:textColor="@color/colorTextSecondary" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/buttonCancel"
+            style="@style/HeaderButton"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_search_cancel" />
+    </LinearLayout>
+
+    <View style="@style/LineVertical" />
+</merge>

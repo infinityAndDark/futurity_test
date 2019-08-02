@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_search">
+
+    <View
+        android:id="@+id/statusPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorHeader" />
+
+    <RelativeLayout
+        style="@style/Header"
+        android:layout_height="56dp">
+
+        <EditText
+            android:hint="Enter keyword to search food..."
+            android:id="@+id/editSearch"
+            style="@style/TextPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_search_bar"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:paddingLeft="44dp"
+            android:paddingRight="50dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_search_bar" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/buttonClear"
+            android:layout_width="50dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_search_cancel" />
+    </RelativeLayout>
+
+    <View style="@style/LineVertical" />
+</merge>

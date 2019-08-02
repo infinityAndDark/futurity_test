@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+        <item name="android:navigationBarColor">@color/colorTransparent</item>
+        <item name="android:statusBarColor">@color/colorTransparent</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+
+    <style name="TextPrimary">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextSecondary">
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextHeader">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="LineVertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_width</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <style name="Header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/header_height</item>
+        <item name="android:background">@color/colorHeader</item>
+    </style>
+
+    <style name="HeaderButton">
+        <item name="android:layout_width">@dimen/header_height</item>
+        <item name="android:layout_height">@dimen/header_height</item>
+        <item name="android:padding">13dp</item>
+    </style>
+</resources>

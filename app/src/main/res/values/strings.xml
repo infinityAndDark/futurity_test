@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Futurity Food</string>
+    <string name="tab_main">Main</string>
+    <string name="tab_order">Order</string>
+    <string name="tab_profile">Profile</string>
+    <string name="tab_checkout">Checkout</string>
+    <string name="search">Search</string>
+    <string name="header_category">Choose one category</string>
+    <string name="delivery_item">Order from $%s - %s min delivery</string>
+    <string name="delivery_grid">$%s-%s min - %d person</string>
+    <string name="score_rate">%.1f</string>
+    <string name="button_order">Order</string>
+    <string name="extra_price">+$%.2f</string>
+    <string name="detail_price">$%.2f</string>
+    <string name="detail_weight">%dg</string>
+    <string name="search_delivery">$%.2f - %d min  -  for %d person</string>
+</resources>
