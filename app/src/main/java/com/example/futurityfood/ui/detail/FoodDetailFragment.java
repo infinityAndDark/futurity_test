@@ -79,6 +79,7 @@ public class FoodDetailFragment extends BaseFragment {
 
     private void setupExtras() {
         recyclerExtras.setLayoutManager(new LinearLayoutManager(recyclerExtras.getContext()));
+        recyclerExtras.setNestedScrollingEnabled(false);
         extrasAdapter = new ExtrasAdapter();
         recyclerExtras.setAdapter(extrasAdapter);
 
